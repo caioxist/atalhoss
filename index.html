@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1><div id="logo">Minha Página</div></h1>
+        <nav>
+        <a href="https://www.shoptimao.com.br/">Home</a>
+        <a href="https://olhardigital.com.br/fale-conosco/">Contato</a>
+        <a href="https://www.shoptimao.com.br/institucional/sobre">Sobre</a>
+        <link rel="stylesheet" href="style.css">
+    </nav>
+    </header>
+ 
+    <div id="corpo">
+        <div id="atalhos">
+            <p>
+                Atalhos utilizados na página:
+            </p>
+            <p>
+                CTRL + q serve para acessar o link Sobre da página <br>
+                CTRL + i serve para acessar o link da imagem da página <br>
+                CTRL + m serve para acessar o bloco de mensagem da página
+            </p>
+        </div>
+        <a href="https://www.shoptimao.com.br/p/camiseta-corinthians-replica-2011-grena-masculina-vinho-992-8732-034" target="_blank">
+            <img src="https://acdn.mitiendanube.com/stores/002/043/849/products/design-sem-nome11-d989393830390f60f316838592157805-640-0.png" alt="Placeholder Image">
+        </a>
+        <div id="corpo">
+    <div id="mensagem-form">
+        <input type="text" id="mensagem-input" placeholder="Digite sua mensagem">
+        <button id="enviar-btn">Enviar</button>
+    </div>
+</div>
+        </div>
+    </div>
+
+    <footer>
+        <h4><p>Desenvolvido por Caio</p></h4>
+    </footer>
+
+    <script>
+        document.addEventListener("keydown", function(event) {
+            if (event.ctrlKey && event.key === "q") {
+                window.location.href = "https://www.shoptimao.com.br/institucional/sobre"
+            }
+            if (event.ctrlKey && event.key === "i") {
+                window.open("https://acdn.mitiendanube.com/stores/002/043/849/products/design-sem-nome11-d989393830390f60f316838592157805-640-0.png");
+            }
+            if (event.ctrlKey && event.key === "m") {
+                document.getElementById("mensagem-input").focus();
+            }
+        });
+    </script>
+</body>
+</html>
